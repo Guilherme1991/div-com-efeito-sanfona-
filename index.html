@@ -9,10 +9,11 @@
 
     <style>
         body{
-            background: black;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+            background: gray;
         }
         h2{
             width: 300px;
@@ -61,11 +62,14 @@
 
     
    <script>
-       
-        function active(){
-         let inativo = document.querySelector('p'); 
+        let inativo = document.querySelector('p');
+        let change = document.querySelector('body');
 
+        function active(){
          inativo.classList.toggle('ativo');
+
+         change.style.backgroundColor = '#f1f1f1';
+
         }
    </script>
 </body>
